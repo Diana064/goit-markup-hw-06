@@ -64,7 +64,59 @@
         <div class="backdrop is-hidden" data-modal >
             <!--Begin modal-wrapper-->
             <div class="modal-wrapper" >
-                <button type="button" class="modal-btn" data-modal-close>Х</button>
+                <button type="button" class="modal-btn" data-modal-close></button>
+                <!--Begin label-block-->
+                <div class="label-block">
+                  <h3 class='modal-title'>Оставьте свои данные, мы вам перезвоним</h3>
+                <!--Begin label-block-->
+                <div class="modal-label">
+                  <!--Begin form-field-->
+                  
+                  
+                       <label class="form-label" for="modal-name">
+                         <span class="form-title">Имя</span>
+                       
+                     <input id='modal-name' class="modal-input" type="name" name="name" placeholder=" ">
+                     <svg class="modal-icon"><use href='./images/modal_svg/symbol-defs_min.svg#icon-name'></use></svg>
+                    </label>
+                  
+               
+                  
+                      <label class="form-label" for="modal-tel">
+                        <span class="form-title">Телефон</span>
+                      <svg class="modal-icon"><use href='./images/modal_svg/symbol-defs_min.svg#icon-tel'></use></svg>
+                <input id="modal-tel" class="modal-input" type="tel" name="tel" placeholder=" ">
+                
+                  </label>
+                  
+                       <label class="form-label" for="modal-mail">
+                         <span class="form-title">Почта</span>
+                      <svg class="modal-icon"><use href='./images/modal_svg/symbol-defs_min.svg#icon-email'></use></svg>
+                <input id="modal-mail" class="modal-input" type="mail" name="mail" placeholder=" ">
+                  </label>
+                
+                  
+                      <label class="form-label "><span class="form-title">Комментарий</span>
+                <textarea class="modal-textarea" placeholder="Введите текст"></textarea>
+                  </label>
+                  <label class="form-label label-checkbox" for="modal-checkbox">
+                    <input class="form-checkbox visually-hidden" type="checkbox" name="checkbox" id='modal-checkbox'>
+                    <span class="custom-checkbox">
+                      <svg class="icon-checkbox"><use href='./images/modal_svg/symbol-defs_min.svg#icon-check'></use></svg>
+                    </span>
+                    <div class="form-text">
+                      <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю </span><a class="checkbox-text checkbox-link">Условия договора</a>
+                    </div>
+                    
+                  </label>
+                  <button type="submit" class="form-btn ">Отправить</button>
+                  
+                </div>
+                <!--End label-block-->  
+                </div>
+                <!--End label-block-->
+                
+               
             </div>
             <!--End modal-wrapper-->
         </div>
@@ -435,6 +487,15 @@
               </ul>
         </div>
         <!--End footer-text-->
+        <div class="subscribe">
+          <h3>Подпишитесь на рассылку</h3>
+          <label class="subscribe-label">
+            <input class="subscribe-input" type="mail" name='email' placeholder="E-mail">
+            <button class="subscribe-btn" type="submit">Подписаться
+              <svg class="subscribe-icon"><use href='./images/modal_svg/symbol-defs_min.svg#icon-teleg'></use></svg>
+            </button>
+          </label>
+        </div>
       </div>
       <!--End -->
     </footer>
