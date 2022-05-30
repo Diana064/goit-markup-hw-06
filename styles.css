@@ -269,6 +269,7 @@ nav a {
 }
 
 .modal-wrapper {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -299,8 +300,32 @@ nav a {
     transform: scale(1), translate(-50%, -50%);
   }
 }
-
 .modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  fill: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modal-btn-icon {
+  transition: fill var(--time) var(--time-cubic);
+}
+
+.modal-btn:hover .modal-btn-icon {
+  fill: var(--blue);
+}
+
+/* .modal-btn {
   display: flex;
   align-items: center;
   margin: 8px;
@@ -322,18 +347,18 @@ nav a {
   transition: border var(--time) var(--time-cubic),
     background-color var(--time) var(--time-cubic),
     color var(--time) var(--time-cubic), transform var(--time) var(--time-cubic);
-}
-.modal-btn:hover {
+} */
+/* .modal-btn:hover {
   border: 2px solid var(--blue);
   background-color: white;
   color: var(--blue);
   transform: rotate(360deg);
   background-image: url("./images/modal_svg/x-black.svg");
-}
-.label-block {
+} */
+/* .label-block {
   margin: 40px;
   margin-top: 2px;
-}
+} */
 .modal-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -815,7 +840,7 @@ address a:last-child {
 .subscribe {
   margin-left: 93px;
 }
-.subscribe-label {
+.subscribe-form {
   display: flex;
   align-items: center;
   justify-content: center;
